@@ -1,0 +1,44 @@
+:root {
+    --lightBlue: rgb(195, 219, 239);
+}
+
+/*Background colour and fonts*/
+body {
+    background-color: var(--lightBlue);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-nav {
+    background-color: var(--lightBlue);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.bg-light {
+    background-color: var(--lightBlue) !important;
+    height: 100px;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+/*https://stackoverflow.com/questions/12845134/
+how-do-i-get-my-links-to-glow-on-hover-with-css3 and 
+https://www.w3schools.com/cssref/css3_pr_text-shadow.php*/
+
+a:hover { 
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
+}
+
+button:hover {
+    box-shadow: 0 0 15px yellow;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+/*https://stackoverflow.com/questions/25685794/
+css-image-border-glow-when-hover-with-individual-color*/
+.card-img-top:hover{
+    box-shadow: 0 0 25px rgba(255,0,0, 0.6);
+}
