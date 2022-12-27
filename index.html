@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Bootstrap Portfolio</title>
+  </head>
+  
+  <body>
+    <!--Navbar (Bootstrap: 'Nav' from https://getbootstrap.com/docs/4.0/components/navbar/)-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Subscribe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CV</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <!--Hero Section Jumbotron: Name, Portrait and Subheading (Bootstrap: 'Fluid jumbotron' from 
+        https://getbootstrap.com/docs/4.0/components/jumbotron/)-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome to the Portfolio</h1> 
+            <h1 class="display-4">of</h1> 
+            <h1 class="display-4">David Adams</h1>
+            <img src="images/portrait.jpg">
+            <p class="lead">Exploring the Limits of Web Design</p>
+        </div>
+      </div>
+
+    <!--Work Section: Displayed on Bootstrap Cards (Bootstrap: 'Images' from https://getbootstrap.com/docs/4.0/components/card/)-->
+    <div class="container-fluid content">
+        <h2 class="sectionHeading">Work</h2>
+        <div class="row showsNear">
+      
+            <!-- Card 1: The Cubist Museum-->
+            <div class="cardContainer col-lg-12 col-md-12 col-sm-12">
+                <a href="https://davidbluelamassu.github.io/Cubist-Museum/">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/jean-metzinger.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End of Card 1 -->
+
+             <!-- Card 2: Architecture-->
+            <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/architect.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End of Card 2 -->
+
+             <!-- Card 3: Mythical Beasts-->
+            <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/lamassu.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End of Card 3 -->
+
+             <!-- Card 4: Dangerous Plants-->
+            <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/plants.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End of Card 4 -->
+
+             <!-- Card 5: Sea Monsters-->
+            <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/monster.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End of Card 5 -->
+            
+        </div>
+    </div>
+
+    <!--Skills Section: Displayed on Bootstrap Cards: 'Card styles', 'Background and color', 'Info card title' from https://getbootstrap.com/docs/4.0/components/card/-->
+
+    <div class="container-fluid content">
+        <h2 class="sectionHeading">Skills</h2>
+        <div class="row showsNear">
+      
+            <!--Skills Card 1-->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Skills Card 1-->
+
+            <!--Skills Card 2-->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Skills Card 2-->
+
+            <!--Skills Card 3-->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Skills Card 3-->
+
+            <!--Skills Card 4-->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Skills Card 4-->
+
+            <!--Skills Card 5-->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Skills Card 5-->
+
+            <!--Skills Card 6-->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Info card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of Skills Card 6-->
+
+        </div>
+    </div>
+
+    <!--About Me Section-->
+
+    <h1>About Me</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+        dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <!--Contact Me Section (Bootstrap: 'Nav' from https://getbootstrap.com/docs/4.0/components/navbar/)-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Text Me Section (Bootstrap: 'Forms', 'Overview' from https://getbootstrap.com/docs/4.0/components/forms/)-->
+
+    <footer>
+        <form>
+            <div class="container-fluid content">
+                <h2 class="sectionHeading">Text Me</h2>
+                <div class="row showsNear">
+                    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                        <div class="favouriteLinks">
+                            <h2>Websites I Like:</h2>
+                            <ul>
+                            <li><a href="#">CSS News</a></li>
+                            <li><a href="#">HTML Post</a></li>
+                            <li><a href="#">Trends in JavaScript</a></li>
+                            <li><a href="#">UX Times</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                        <div class="sideProjects">
+                            <h2>Side Projects:</h2>
+                            <ul>
+                            <li><a href="#">MATLAB and Typography</a></li>
+                            <li><a href="#">Solving Historical Problems with R</a></li>
+                            <li><a href="#">Python Games</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    <div class="cardContainer col-lg-4 col-md-4 col-sm-12">    
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </form>
+
+
+
+
+
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
