@@ -108,6 +108,20 @@ h5 {
     text-align: center;
 }
 
-.cubist {
-    margin: auto !important;
+.card-img-top {
+    object-fit: cover;
+    height: 400px;
+}
+
+.workCard {
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-body-work {
+    background-color: var(--Blue);
+    text-align: center;
+    color: white;
 }
