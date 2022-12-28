@@ -1,5 +1,7 @@
 :root {
     --lightBlue: rgb(195, 219, 239);
+    --Blue: rgb(63, 5, 139);
+    --blueBlack: rgb(10, 1, 22);
 }
 
 /*Background colour and fonts*/
@@ -9,19 +11,19 @@ body {
 }
 
 .navbar-nav {
-    background-color: var(--lightBlue);
+    background-color: var(--blueBlack);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
 .bg-light {
-    background-color: var(--lightBlue) !important;
+    background-color: var(--blueBlack) !important;
     height: 100px;
 }
 
 .nav-link {
-    color: black !important;
+    color: white !important;
 }
 
 /*https://stackoverflow.com/questions/12845134/
@@ -41,4 +43,50 @@ button:hover {
 css-image-border-glow-when-hover-with-individual-color*/
 .card-img-top:hover{
     box-shadow: 0 0 25px rgba(255,0,0, 0.6);
+}
+
+.jumbotron {
+    background-image: url(../images/limits.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.display-4 {
+    color: white;
+    background-color: var(--Blue);
+    margin: 0;
+    text-align: center;
+    width: 500px;
+    font-size: 35px;
+    padding: 5px;
+    position: relative;
+    right: 120px;
+    bottom: 60px;
+
+}
+
+#name {
+    font-size: 50px !important;
+}
+
+.lead {
+    position: relative;
+    color: white;
+    background-color: var(--Blue);
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    left: 875px;
+    font-size: 30px;
+}
+
+#portrait {
+    position: relative;
+    height: 400px;
+    right: 75px;
+    bottom: 25px;
+}
+
+.container {
+    height: 1000px;
 }
