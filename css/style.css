@@ -11,19 +11,19 @@ body {
 }
 
 .navbar-nav {
-    background-color: var(--blueBlack);
+    background-color: var(--lightBlue);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
 .bg-light {
-    background-color: var(--blueBlack) !important;
+    background-color: var(--lightBlue) !important;
     height: 100px;
 }
 
 .nav-link {
-    color: white !important;
+    color: black !important;
 }
 
 /*https://stackoverflow.com/questions/12845134/
@@ -89,4 +89,25 @@ css-image-border-glow-when-hover-with-individual-color*/
 
 .container {
     height: 1000px;
+}
+
+.sectionHeading {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    padding-top: 30px;
+}
+
+#aboutMeText {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+h5 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cubist {
+    margin: auto !important;
 }
