@@ -52,48 +52,52 @@ css-image-border-glow-when-hover-with-individual-color*/
 .jumbotron {
     background-image: url(../images/limits.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 97%;
 }
 
-.display-4 {
+#welcome {
     color: white;
     background-color: var(--Blue);
     margin: 0;
     text-align: center;
-    width: 500px;
-    font-size: 35px;
+    width: 350px;
     padding: 5px;
-    position: relative;
-    right: 120px;
-    bottom: 60px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
     z-index: 1;
 }
 
-#name {
-    font-size: 50px !important;
+.display-4 {
+    font-size: 25px;
 }
 
-/*.lead {
-    position: relative;
+#name {
+    font-size: 40px !important;
+}
+
+.lead {
+    position: absolute;
     color: white;
     background-color: var(--Blue);
     width: 350px;
     text-align: center;
     padding: 10px;
-    left: 875px;
+    right: 0px;
+    top: 550px;
     font-size: 30px;
-}*/
+}
 
 #portrait {
-    position: relative;
-    height: 400px;
-    right: 75px;
-    bottom: 25px;
+    position: absolute;
+    height: 250px;
+    left: 70px;
+    top: 275px;
     z-index: 1;
 }
 
 .container {
-    height: 1000px;
+    height: 500px;
 }
 
 .sectionHeading {
@@ -106,6 +110,11 @@ css-image-border-glow-when-hover-with-individual-color*/
 #aboutMeText {
     padding-top: 20px;
     text-align: justify;
+}
+
+#aboutMeContainer {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h5 {
@@ -149,7 +158,6 @@ h5 {
 .card-body-skills {
     background-color: rgb(100, 5, 139);
     padding: 15px;
-    /*height: 120px;*/
 }
 
 .btn-primary {
