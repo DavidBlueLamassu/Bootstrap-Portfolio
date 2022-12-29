@@ -24,6 +24,10 @@ body {
 
 .nav-link {
     color: black !important;
+    font-size: 25px;
+    position: relative;
+    z-index: 100;
+    background-color: var(--lightBlue);
 }
 
 /*https://stackoverflow.com/questions/12845134/
@@ -62,14 +66,14 @@ css-image-border-glow-when-hover-with-individual-color*/
     position: relative;
     right: 120px;
     bottom: 60px;
-
+    z-index: 1;
 }
 
 #name {
     font-size: 50px !important;
 }
 
-.lead {
+/*.lead {
     position: relative;
     color: white;
     background-color: var(--Blue);
@@ -78,13 +82,14 @@ css-image-border-glow-when-hover-with-individual-color*/
     padding: 10px;
     left: 875px;
     font-size: 30px;
-}
+}*/
 
 #portrait {
     position: relative;
     height: 400px;
     right: 75px;
     bottom: 25px;
+    z-index: 1;
 }
 
 .container {
@@ -144,5 +149,14 @@ h5 {
 .card-body-skills {
     background-color: rgb(100, 5, 139);
     padding: 15px;
-    height: 120px;
+    /*height: 120px;*/
+}
+
+.btn-primary {
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+} 
+
+li a{
+    color: black;
 }
