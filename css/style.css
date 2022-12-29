@@ -114,7 +114,7 @@ h5 {
 }
 
 .workCard {
-    margin: 30px;
+    margin: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -124,4 +124,25 @@ h5 {
     background-color: var(--Blue);
     text-align: center;
     color: white;
+}
+
+.skillCard {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-header {
+    background-color: var(--Blue);
+    text-align: center;
+}
+
+.skillCard2 {
+    border: solid var(--Blue) 1px;
+}
+.card-body-skills {
+    background-color: rgb(100, 5, 139);
+    padding: 15px;
+    height: 120px;
 }
