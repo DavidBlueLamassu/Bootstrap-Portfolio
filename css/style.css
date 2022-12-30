@@ -165,6 +165,41 @@ h5 {
     border-color: var(--Blue);
 } 
 
+#aboutMe {
+    padding-top: 50px;
+}
+
+#contactMe {
+    padding-top: 50px;
+}
+
+#contactMeNav {
+    padding-top: 50px;
+}
+
 li a{
     color: black;
+}
+
+#textMe {
+    padding-top: 85px;
+}
+
+.textMeContent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+}
+
+.favouriteLinks {
+    padding-bottom: 50px;
+}
+
+#emailButton {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+#exampleInputPassword1 {
+    padding-bottom: 150px;
 }
