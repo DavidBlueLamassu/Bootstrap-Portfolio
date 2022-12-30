@@ -1,15 +1,44 @@
+/*Variables*/
 :root {
     --lightBlue: rgb(195, 219, 239);
     --Blue: rgb(63, 5, 139);
-    --blueBlack: rgb(10, 1, 22);
 }
 
-/*Background colour and fonts*/
+/*General: Background colour and founts*/
 body {
     background-color: var(--lightBlue);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/*General: Section Heading Formatting*/
+.sectionHeading {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 2px solid black;
+    padding-top: 30px;
+}
+
+/* ***https://stackoverflow.com/questions/12845134/
+how-do-i-get-my-links-to-glow-on-hover-with-css3 and 
+https://www.w3schools.com/cssref/css3_pr_text-shadow.php*** */
+
+/*General--Links: Hover glow effects for all link text*/
+a:hover { 
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
+}
+
+/*General--Buttons: Hover glow effects for all buttons*/
+button:hover {
+    box-shadow: 0 0 15px yellow;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+/*General: Colour of fount for links organised in a list -- Applied to revise colour of Footer Links*/
+li a{
+    color: black;
+}
+
+/*Navbar: Background colour and spacing for links*/
 .navbar-nav {
     background-color: var(--lightBlue);
     display: flex;
@@ -17,11 +46,13 @@ body {
     width: 100%;
 }
 
+/*Navbar: Revises background colour of navbar padding and increases height of navbar*/
 .bg-light {
     background-color: var(--lightBlue) !important;
     height: 100px;
 }
 
+/*Navbar: Fount colour and size; sets z-index to display drop down menu in front of jumbotron when in smaller media formats*/
 .nav-link {
     color: black !important;
     font-size: 25px;
@@ -30,31 +61,14 @@ body {
     background-color: var(--lightBlue);
 }
 
-/*https://stackoverflow.com/questions/12845134/
-how-do-i-get-my-links-to-glow-on-hover-with-css3 and 
-https://www.w3schools.com/cssref/css3_pr_text-shadow.php*/
-
-a:hover { 
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
-}
-
-button:hover {
-    box-shadow: 0 0 15px yellow;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-}
-
-/*https://stackoverflow.com/questions/25685794/
-css-image-border-glow-when-hover-with-individual-color*/
-.card-img-top:hover{
-    box-shadow: 0 0 25px rgba(255,0,0, 0.6);
-}
-
+/*Hero Section: Background image properties*/
 .jumbotron {
     background-image: url(../images/limits.jpg);
     background-size: cover;
     background-position: 50% 97%;
 }
 
+/*Hero Section: Welcome and name heading*/
 #welcome {
     color: white;
     background-color: var(--Blue);
@@ -68,14 +82,17 @@ css-image-border-glow-when-hover-with-individual-color*/
     z-index: 1;
 }
 
+/*Hero Section: Welcome and name heading main fount size*/
 .display-4 {
     font-size: 25px;
 }
 
+/*Hero Section: Welcome and name heading name fount size*/
 #name {
     font-size: 40px !important;
 }
 
+/*Hero Section: Subheading*/
 .lead {
     position: absolute;
     color: white;
@@ -88,6 +105,7 @@ css-image-border-glow-when-hover-with-individual-color*/
     font-size: 30px;
 }
 
+/*Hero Section: Portrait*/
 #portrait {
     position: absolute;
     height: 250px;
@@ -96,37 +114,26 @@ css-image-border-glow-when-hover-with-individual-color*/
     z-index: 1;
 }
 
+/*Hero Section: Height of jumbotron container*/
 .container {
     height: 500px;
 }
 
-.sectionHeading {
-    text-align: center;
-    font-size: 40px;
-    border-bottom: 2px solid black;
-    padding-top: 30px;
+/* ***https://stackoverflow.com/questions/25685794/
+css-image-border-glow-when-hover-with-individual-color*** */
+
+/*Work Section: Hover glow effects for webpage images*/
+.card-img-top:hover{
+    box-shadow: 0 0 25px rgba(255,0,0, 0.6);
 }
 
-#aboutMeText {
-    padding-top: 20px;
-    text-align: justify;
-}
-
-#aboutMeContainer {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h5 {
-    padding-top: 10px;
-    text-align: center;
-}
-
+/*Work Section: Image Size and Display*/
 .card-img-top {
     object-fit: cover;
     height: 400px;
 }
 
+/*Work Section: Centering and Margins of Cards*/
 .workCard {
     margin: 50px;
     display: block;
@@ -134,12 +141,14 @@ h5 {
     margin-right: auto;
 }
 
+/*Work Section: Card Text*/
 .card-body-work {
     background-color: var(--Blue);
     text-align: center;
     color: white;
 }
 
+/*Skills Section: Centering and Margins of Cards*/
 .skillCard {
     margin-top: 50px;
     display: block;
@@ -147,59 +156,86 @@ h5 {
     margin-right: auto;
 }
 
+/*Skills Section: Header Colour and Text Centred*/
 .card-header {
     background-color: var(--Blue);
     text-align: center;
 }
 
+/*Skills Section: Colour of Card Borders*/
 .skillCard2 {
     border: solid var(--Blue) 1px;
 }
+
+/*Skills Section: Colour of Card Body*/
 .card-body-skills {
     background-color: rgb(100, 5, 139);
     padding: 15px;
 }
 
+/*About Me Section: Text*/
+#aboutMeText {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+/*About Me Section: Container Centred*/
+#aboutMeContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*About Me Section: Padding added to Heading*/
+#aboutMe {
+    padding-top: 50px;
+}
+
+/*Contact Me Section: Padding added to Heading*/
+#contactMe {
+    padding-top: 50px;
+}
+
+/*Contact Me Section: Padding added above Navbar*/
+#contactMeNav {
+    padding-top: 50px;
+}
+
+/*Footer: Button Colours*/
 .btn-primary {
     background-color: var(--Blue);
     border-color: var(--Blue);
 } 
 
-#aboutMe {
-    padding-top: 50px;
-}
-
-#contactMe {
-    padding-top: 50px;
-}
-
-#contactMeNav {
-    padding-top: 50px;
-}
-
-li a{
-    color: black;
-}
-
+/*Footer: Padding added to Heading*/
 #textMe {
     padding-top: 85px;
 }
 
+/*Footer: Spacing added to content*/
 .textMeContent {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-left: auto;
 }
 
+/*Footer: Spacing added to separate first line of objects from second*/
 .favouriteLinks {
     padding-bottom: 50px;
 }
 
+/*Footer: Spacing for Sign-up button*/
 #emailButton {
     margin-top: 15px;
     margin-left: 25px;
 }
 
+/*Footer: Enlarges Text Box*/
 #exampleInputPassword1 {
     padding-bottom: 150px;
+}
+
+/*Footer: Copyright Text Centred*/
+h5 {
+    padding-top: 10px;
+    text-align: center;
 }
