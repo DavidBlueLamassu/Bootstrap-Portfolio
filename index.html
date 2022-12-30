@@ -1,396 +1,351 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Bootstrap Portfolio</title>
-  </head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <!--Local CSS file-->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Bootstrap Portfolio</title>
+    </head>
   
-  <body>
-    <!--Navbar (Bootstrap: 'Nav' from https://getbootstrap.com/docs/4.0/components/navbar/)-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#work">Work</a>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#aboutMe">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contactMe">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#textMe">Text Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CV</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <body>
+        <!--Navbar (Bootstrap navbar component: 'Nav' from https://getbootstrap.com/docs/4.0/components/navbar/)-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactMe">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#textMe">Text Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CV</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
-    <!--Hero Section Jumbotron: Name, Portrait and Subheading (Bootstrap: 'Fluid jumbotron' from 
-        https://getbootstrap.com/docs/4.0/components/jumbotron/)-->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class ="col-lg-4 col-md-4 col-sm-12" id="welcome">
-                <h1 class="display-4">Welcome to the Portfolio</h1> 
-                <h1 class="display-4">of</h1> 
-                <h1 class="display-4" id="name">David Adams</h1>
+        <!--Hero Section: Name, Portrait and Subheading (Bootstrap jumbotron component: 'Fluid jumbotron' from 
+            https://getbootstrap.com/docs/4.0/components/jumbotron/)-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class ="col-lg-4 col-md-4 col-sm-12" id="welcome">
+                    <h1 class="display-4">Welcome to the Portfolio</h1> 
+                    <h1 class="display-4">of</h1> 
+                    <h1 class="display-4" id="name">David Adams</h1>
+                </div>
+                <img id="portrait" src="images/portrait.jpg" alt="Photograph of David Adams">
+                <p class="col-lg-4 col-md-4 col-sm-12 lead">Exploring the Limits of Web Design</p>
             </div>
-            <img id="portrait" src="images/portrait.jpg">
-            <p class="col-lg-4 col-md-4 col-sm-12 lead">Exploring the Limits of Web Design</p>
         </div>
-      </div>
 
-    <!--Work Section: Displayed on Bootstrap Cards (Bootstrap: 'Images' from https://getbootstrap.com/docs/4.0/components/card/)-->
-    <div class="container-fluid content">
-        <h2 class="sectionHeading" id="work">Work</h2>
-        <div class="row workRow">
+        <!--Work Section: Displayed on Bootstrap Cards (Bootstrap card component: 'Images' from 
+            https://getbootstrap.com/docs/4.0/components/card/)-->
+        <!--Heading and setup to arrange cards in rows-->
+        <div class="container-fluid content">
+            <h2 class="sectionHeading" id="work">Work</h2>
+            <div class="row workRow">
       
-            <!-- Card 1: The Cubist Museum-->
-            <div class="workCard col-lg-11 col-md-11 col-sm-12">
-                <div class="card">
-                    <a href="https://davidbluelamassu.github.io/Cubist-Museum/">
-                        <img class="card-img-top cubist" src="images/jean-metzinger.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-body card-body-work">
-                        <p class="card-text">The Cubist Museum</p>
-                        <p class="card-text">HTML/CSS/JavaScript</p>
+                <!--Card 1: The Cubist Museum-->
+                <div class="workCard col-lg-11 col-md-11 col-sm-12">
+                    <div class="card">
+                        <a href="https://davidbluelamassu.github.io/Cubist-Museum/">
+                            <img class="card-img-top cubist" src="images/jean-metzinger.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body card-body-work">
+                            <p class="card-text">The Cubist Museum</p>
+                            <p class="card-text">HTML/CSS/JavaScript</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of Card 1 -->
+                <!--End of Work Card 1-->
 
-             <!-- Card 2: Architecture-->
-            <div class="workCard col-lg-5 col-md-5 col-sm-12">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" src="images/architect.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-body card-body-work">
-                        <p class="card-text">Architecture</p>
-                        <p class="card-text">HTML/CSS/JavaScript</p>
+                <!--Card 2: Architecture-->
+                <div class="workCard col-lg-5 col-md-5 col-sm-12">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/architect.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body card-body-work">
+                            <p class="card-text">Architecture</p>
+                            <p class="card-text">HTML/CSS/JavaScript</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of Card 2 -->
+                <!--End of Work Card 2-->
 
-             <!-- Card 3: Mythical Beasts-->
-            <div class="workCard col-lg-5 col-md-5 col-sm-12">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" src="images/lamassu.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-body card-body-work">
-                        <p class="card-text">Mythical Beasts</p>
-                        <p class="card-text">HTML/CSS/JavaScript</p>
+                <!-- Card 3: Mythical Beasts-->
+                <div class="workCard col-lg-5 col-md-5 col-sm-12">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/lamassu.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body card-body-work">
+                            <p class="card-text">Mythical Beasts</p>
+                            <p class="card-text">HTML/CSS/JavaScript</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of Card 3 -->
+                <!--End of Work Card 3-->
 
-             <!-- Card 4: Dangerous Plants-->
-            <div class="workCard col-lg-5 col-md-5 col-sm-12">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" src="images/plants.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-body card-body-work">
-                        <p class="card-text">Dangerous Plants</p>
-                        <p class="card-text">HTML/CSS</p>
+                <!--Card 4: Dangerous Plants-->
+                <div class="workCard col-lg-5 col-md-5 col-sm-12">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/plants.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body card-body-work">
+                            <p class="card-text">Dangerous Plants</p>
+                            <p class="card-text">HTML/CSS</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of Card 4 --> 
+                <!--End of Work Card 4 --> 
 
-             <!-- Card 5: Sea Monsters-->
-            <div class="workCard col-lg-5 col-md-5  col-sm-12">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" src="images/monster.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-body card-body-work">
-                        <p class="card-text">Sea Monsters</p>
-                        <p class="card-text">HTML/CSS</p>
+                <!--Card 5: Sea Monsters-->
+                <div class="workCard col-lg-5 col-md-5  col-sm-12">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/monster.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body card-body-work">
+                            <p class="card-text">Sea Monsters</p>
+                            <p class="card-text">HTML/CSS</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End of Card 5 -->
+                <!--End of Work Card 5-->
             
+            </div>
         </div>
-    </div>
 
-    <!--Skills Section: Displayed on Bootstrap Cards: 'Card styles', 'Background and color', 'Info card title' from https://getbootstrap.com/docs/4.0/components/card/-->
-
-    <div class="container-fluid content">
-        <h2 class="sectionHeading" id="skills">Skills</h2>
-        <div class="row">
+        <!--Skills Section: Displayed on Bootstrap Cards (Bootstrap card component: 'Card styles', 'Background and color', 
+            'Info card title' from https://getbootstrap.com/docs/4.0/components/card/-->
+        <!--Heading and setup to arrange cards in rows-->
+        <div class="container-fluid content">
+            <h2 class="sectionHeading" id="skills">Skills</h2>
+            <div class="row">
       
-            <!--Skills Card 1-->
-            <div class="skillCard col-lg-4 col-md-4 col-sm-12">
-                <div class="skillCard2 card text-white bg-info mb-3">
-                    <div class="card-header">HTML</div>
-                    <div class="card-body-skills">
-                        <ul>
-                            <li>Have built 50+ HTML-based webpages</li>
-                            <li>Code using semantic HTML</li>
-                            <li>Able to use div tags for grids and flexboxes</li>
-                        </ul>
+                <!--Skills Card 1-->
+                <div class="skillCard col-lg-4 col-md-4 col-sm-12">
+                    <div class="skillCard2 card text-white bg-info mb-3">
+                        <div class="card-header">HTML</div>
+                        <div class="card-body-skills">
+                            <ul>
+                                <li>Have built 50+ HTML-based webpages</li>
+                                <li>Code using semantic HTML</li>
+                                <li>Able to use div tags for grids and flexboxes</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Skills Card 1-->
+                <!--End of Skills Card 1-->
 
-            <!--Skills Card 2-->
-            <div class="skillCard col-lg-4 col-md-4 col-sm-12">
-                <div class="skillCard2 card text-white bg-info mb-3">
-                    <div class="card-header">CSS</div>
-                    <div class="card-body-skills">
-                        <ul>
-                            <li>Have formatted 50+ webpages with CSS</li>
-                            <li>Can make grids and flexboxes</li>
-                            <li>Have reguarly used Media Queries</li>
-                        </ul>
+                <!--Skills Card 2-->
+                <div class="skillCard col-lg-4 col-md-4 col-sm-12">
+                    <div class="skillCard2 card text-white bg-info mb-3">
+                        <div class="card-header">CSS</div>
+                        <div class="card-body-skills">
+                            <ul>
+                                <li>Have formatted 50+ webpages with CSS</li>
+                                <li>Can make grids and flexboxes</li>
+                                <li>Have reguarly used Media Queries</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Skills Card 2-->
+                <!--End of Skills Card 2-->
 
-            <!--Skills Card 3-->
-            <div class="skillCard col-lg-4 col-md-4 col-sm-12">
-                <div class="skillCard2 card text-white bg-info mb-3">
-                    <div class="card-header">Github</div>
-                    <div class="card-body-skills">
-                        <ul>
-                            <li>Use gitbash and VS-Code to make webpages</li>
-                            <li>Have pushed 200+ times to Github</li>
-                            <li>Have published 50+ webpages to Github pages</li>
-                        </ul>
+                <!--Skills Card 3-->
+                <div class="skillCard col-lg-4 col-md-4 col-sm-12">
+                    <div class="skillCard2 card text-white bg-info mb-3">
+                        <div class="card-header">Github</div>
+                        <div class="card-body-skills">
+                            <ul>
+                                <li>Use gitbash and VS-Code to make webpages</li>
+                                <li>Have pushed 200+ times to Github</li>
+                                <li>Have published 50+ webpages to Github pages</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Skills Card 3-->
+                <!--End of Skills Card 3-->
 
-            <!--Skills Card 4-->
-            <div class="skillCard col-lg-4 col-md-4 col-sm-12">
-                <div class="skillCard2 card text-white bg-info mb-3">
-                    <div class="card-header">JavaScript</div>
-                    <div class="card-body-skills">
-                        <ul>
-                            <li>Able to make interactive webpages</li>
-                            <li>Have written JavaScript games</li>
-                        </ul>
+                <!--Skills Card 4-->
+                <div class="skillCard col-lg-4 col-md-4 col-sm-12">
+                    <div class="skillCard2 card text-white bg-info mb-3">
+                        <div class="card-header">JavaScript</div>
+                        <div class="card-body-skills">
+                            <ul>
+                                <li>Able to make interactive webpages</li>
+                                <li>Have written JavaScript games</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Skills Card 4-->
+                <!--End of Skills Card 4-->
 
-            <!--Skills Card 5-->
-            <div class="skillCard col-lg-4 col-md-4 col-sm-12">
-                <div class="skillCard2 card text-white bg-info mb-3">
-                    <div class="card-header">Bootstrap</div>
-                    <div class="card-body-skills">
-                        <ul>
-                            <li>Regularly code with Bootstrap components</li>
-                            <li>Able to avoid need for Media Queries</li>
-                            <li>Considerable experience customizing components with HTML and CSS</li>
-                        </ul>
+                <!--Skills Card 5-->
+                <div class="skillCard col-lg-4 col-md-4 col-sm-12">
+                    <div class="skillCard2 card text-white bg-info mb-3">
+                        <div class="card-header">Bootstrap</div>
+                        <div class="card-body-skills">
+                            <ul>
+                                <li>Regularly code with Bootstrap components</li>
+                                <li>Able to avoid need for Media Queries</li>
+                                <li>Considerable experience customizing components with HTML and CSS</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Skills Card 5-->
+                <!--End of Skills Card 5-->
 
-            <!--Skills Card 6-->
-            <div class="skillCard col-lg-4 col-md-4 col-sm-12">
-                <div class="skillCard2 card text-white bg-info mb-3">
-                    <div class="card-header">UX Design</div>
-                    <div class="card-body-skills">
-                        <ul>
-                            <li>Familiar with fundamental principles of UX Design</li>
-                            <li>Have worked with Figma to build webpages</li>
-                        </ul>
+                <!--Skills Card 6-->
+                <div class="skillCard col-lg-4 col-md-4 col-sm-12">
+                    <div class="skillCard2 card text-white bg-info mb-3">
+                        <div class="card-header">UX Design</div>
+                        <div class="card-body-skills">
+                            <ul>
+                                <li>Familiar with fundamental principles of UX Design</li>
+                                <li>Have worked with Figma to build webpages</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Skills Card 6-->
+                <!--End of Skills Card 6-->
 
+            </div>
         </div>
-    </div>
 
-    <!--About Me Section-->
-
-    <div class="container-fluid content">
-        <h2 class="sectionHeading" id="aboutMe">About Me</h2>
-        <div class="col-lg-10 col-md-10 col-sm-12" id="aboutMeContainer">
-            <p id="aboutMeText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum 
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-    </div>
-
-    <!--Contact Me Section (Bootstrap: 'Supported content' from https://getbootstrap.com/docs/4.0/components/navbar/)-->
-    <div class="container-fluid content">
-        <h2 class="sectionHeading" id="contactMe">Contact Me</h2>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav" id="contactMeNav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">E-mail<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Phone<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Twitter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Spotify</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <!--Text Me Section (Bootstrap: 'Forms', 'Overview' from https://getbootstrap.com/docs/4.0/components/forms/)-->
-
-    <footer id="textMe">
-        <form>
+        <!--About Me Section-->
+        <section>
             <div class="container-fluid content">
-                <h2 class="sectionHeading">Text Me</h2>
-                <div class="row textMeContent">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="favouriteLinks">
-                            <h3>Websites I Like:</h3>
-                            <ul>
-                            <li><a href="#">CSS News</a></li>
-                            <li><a href="#">HTML Post</a></li>
-                            <li><a href="#">Trends in JavaScript</a></li>
-                            <li><a href="#">UX Times</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="sideProjects">
-                            <h3>Side Projects:</h3>
-                            <ul>
-                            <li><a href="#">MATLAB and Typography</a></li>
-                            <li><a href="#">Solving Historical Problems with R</a></li>
-                            <li><a href="#">Python Games</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1"><h3>Subscribe to my Monthly E-letter</h3></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter e-mail">
-                            <button type="submit" class="btn btn-primary" id="emailButton">Sign-Up</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">    
-                        <div class="form-group">
-                            <label for="exampleInputPassword1"><h3>Send me a Text</h3></label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Text Me">
-                        </div>
-                        <div class="form-check">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </div>
-                    
+                <h2 class="sectionHeading" id="aboutMe">About Me</h2>
+                <div class="col-lg-10 col-md-10 col-sm-12" id="aboutMeContainer">
+                    <p id="aboutMeText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum 
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                    dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
                 </div>
-                <h5>&copy David Adams 2022</h5>
             </div>
+        </section>
 
+        <!--Contact Me Section (Bootstrap navbar component: 'Supported content' from https://getbootstrap.com/docs/4.0/components/navbar/)-->
+        <!--Heading-->
+        <div class="container-fluid content">
+            <h2 class="sectionHeading" id="contactMe">Contact Me</h2>
+        </div>
 
-        </form>
-
-
-
-
-
-    </footer>
+        <!--Beginning of Bootstrap navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" id="contactMeNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">E-mail<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Phone<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Spotify</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+        <!--Text Me Section/Footer (Bootstrap forms component: 'Overview' from https://getbootstrap.com/docs/4.0/components/forms/)-->
+        <!--Reference id for navbar at beginning of webpage-->
+        <footer id="textMe">
+        
+            <!--Beginning of form-->
+            <form>
+                <div class="container-fluid content">
+                    <h2 class="sectionHeading">Text Me</h2>
+                    <div class="row textMeContent">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="favouriteLinks">
+                                <h3>Websites I Like:</h3>
+                                <ul>
+                                    <li><a href="#">CSS News</a></li>
+                                    <li><a href="#">HTML Post</a></li>
+                                    <li><a href="#">Trends in JavaScript</a></li>
+                                    <li><a href="#">UX Times</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="sideProjects">
+                                <h3>Side Projects:</h3>
+                                <ul>
+                                    <li><a href="#">MATLAB and Typography</a></li>
+                                    <li><a href="#">Solving Historical Problems with R</a></li>
+                                    <li><a href="#">Python Games</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">
+                                    <h3>Subscribe to my Monthly E-letter</h3>
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter e-mail">
+                                <button type="submit" class="btn btn-primary" id="emailButton">Sign-Up</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">    
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">
+                                    <h3>Send me a Text</h3>
+                                </label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Text Me">
+                            </div>
+                            <div class="form-check">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <h5>&copy David Adams 2022</h5>
+                </div>
+            </form>
+        </footer>
+            
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
