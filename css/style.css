@@ -10,6 +10,11 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/*The underline effect used for headings was derived from code described in a query on 'stack overflow' (trootnet, 
+'Underlining lines in full width, not only text', stack overflow (30 August 2015), last viewed 31 December 2022: 
+https://stackoverflow.com/questions/32296136/underlining-lines-in-full-width-not-only-text) and from examples given on 
+'w3schools' ('CSS border-bottom Property, w3schools, last viewed 31 December 2022: 'https://www.w3schools.com/cssref/pr_border-bottom.php) */
+
 /*General: Section Heading Formatting*/
 .sectionHeading {
     text-align: center;
@@ -18,14 +23,20 @@ body {
     padding-top: 30px;
 }
 
-/* ***https://stackoverflow.com/questions/12845134/
-how-do-i-get-my-links-to-glow-on-hover-with-css3 and 
-https://www.w3schools.com/cssref/css3_pr_text-shadow.php*** */
+/* The 'text-shadow' glow effects below are taken from Kevin Boucher's reply to a query on 'stack overflow' (Brian Peters, 
+'How do I get my links to glow on :hover with CSS3? [duplicate]', stack overflow (11 October 2012), last viewed 
+31 December 2022: https://stackoverflow.com/questions/12845134/how-do-i-get-my-links-to-glow-on-hover-with-css3) 
+and from an example given on 'w3schools' ('CSS text-shadow Property', w3schools, last viewed 31 December 2022: 
+https://www.w3schools.com/cssref/css3_pr_text-shadow.php) */
 
 /*General--Links: Hover glow effects for all link text*/
 a:hover { 
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
 }
+
+/* The 'box-shadow' glow effect below was modified from code given in Paul's reply to a query on 
+'stack overflow' (Kenny Yap, 'CSS-Image border glow when hover with individual color', 'stack overflow', (5 September 2014), 
+last viewed 31 December 2022: https://stackoverflow.com/questions/25685794/css-image-border-glow-when-hover-with-individual-color) */
 
 /*General--Buttons: Hover glow effects for all buttons*/
 button:hover {
@@ -60,6 +71,9 @@ li a{
     z-index: 100;
     background-color: var(--lightBlue);
 }
+
+/*The background-position effect below derives from examples from 'w3schools' ('CSS The object-position Property', w3schools, last viewed
+31 December 2022: https://www.w3schools.com/css/css3_object-position.asp) */
 
 /*Hero Section: Background image properties*/
 .jumbotron {
@@ -119,13 +133,17 @@ li a{
     height: 500px;
 }
 
-/* ***https://stackoverflow.com/questions/25685794/
-css-image-border-glow-when-hover-with-individual-color*** */
+/* The 'box-shadow' glow effect below was modified from code given in Paul's reply to a query on 
+'stack overflow' (Kenny Yap, 'CSS-Image border glow when hover with individual color', 'stack overflow', (5 September 2014), 
+last viewed 31 December 2022: https://stackoverflow.com/questions/25685794/css-image-border-glow-when-hover-with-individual-color) */
 
 /*Work Section: Hover glow effects for webpage images*/
 .card-img-top:hover{
     box-shadow: 0 0 25px rgba(255,0,0, 0.6);
 }
+
+/*The object-fit effect below derives from examples from 'w3schools' ('CSS The object-fit Property', w3schools, last viewed
+31 December 2022: https://www.w3schools.com/css/css3_object-fit.asp) */
 
 /*Work Section: Image Size and Display*/
 .card-img-top {
@@ -239,3 +257,21 @@ h5 {
     padding-top: 10px;
     text-align: center;
 }
+
+/*Image Sources:
+Hero Section background image class="jumbotron", 'limits.jpg': Etienne-Louis Boullée, 'Perspective View of the 
+Interior of a Metropolitan Church' (1780-1781): 
+https://upload.wikimedia.org/wikipedia/commons/d/d4/Etienne-Louis_Boull%C3%A9e%2C_Perspective_View_of_the_Interior_of_a_Metropolitan_Church%2C_1780-1781%2C_NGA_73870.jpg
+Work Section, Card 1, 'jean-metzinger.jpg': Jean Metzinger, 'Cubist Landscape' (1911):
+https://www.flickr.com/photos/gandalfsgallery/50095877028
+Work Section, Card 2, 'architect.jpg': A modern building in Cleveland:
+https://www.publicdomainpictures.net/en/free-download.php?image=modern-building&id=2242
+Work Section, Card 3, 'lamassu.jpg': Lamassu, excavated from Khorsabad, ancient Dur Sharrukin, 
+Iraq, Musée du Louvre (721-705 B.C.E):
+https://www.flickr.com/photos/profzucker/14602611523
+Work Section, Card 4, 'plants.jpg': Venus Fly Trap:
+https://pxhere.com/en/photo/569399
+Work Section, Card 5, 'monster.jpg': Edouard Riou, An ideal scene of the Lias period with 
+two sauropods in the sea:
+https://www.lookandlearn.com/history-images/YW023200V/An-ideal-scene-of-the-Lias-period-with-two-sauropods-in-the-sea
+*/
