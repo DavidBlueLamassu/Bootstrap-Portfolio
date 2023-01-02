@@ -143,7 +143,7 @@ last viewed 31 December 2022: https://stackoverflow.com/questions/25685794/css-i
 }
 
 /*The object-fit effect below derives from examples from 'w3schools' ('CSS The object-fit Property', w3schools, last viewed
-31 December 2022: https://www.w3schools.com/css/css3_object-fit.asp) */
+31 December 2022: https://www.w3schools.com/css/css3_object-fit.asp)*/
 
 /*Work Section: Image Size and Display*/
 .card-img-top {
@@ -241,7 +241,7 @@ last viewed 31 December 2022: https://stackoverflow.com/questions/25685794/css-i
     padding-bottom: 50px;
 }
 
-/*Footer: Spacing for Sign-up button*/
+/*Footer: Placement of Sign-up button*/
 #emailButton {
     margin-top: 15px;
     margin-left: 25px;
