@@ -19,7 +19,7 @@ N/A
 
 ## https://davidbluelamassu.github.io/Challenge-Week3/
 
-![Screenshot of Horiseon Homepage](./images/portfolio-screencapture.png)
+![Screenshot of Portfolio](./images/portfolio-screencapture.png)
 
 
 
